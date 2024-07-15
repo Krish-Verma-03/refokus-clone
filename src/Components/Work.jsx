@@ -80,7 +80,7 @@ function Work() {
   });
 
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full ">
       <div className="relative  hidden md:block text-center max-w-screen-xl mx-auto  ">
         <div className="relative flex flex-col items-center w-full  top-[-3vw] ">
           <h1 className="text-[40vw]  font-medium leading-none select-none tracking-tight">

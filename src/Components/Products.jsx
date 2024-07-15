@@ -125,7 +125,7 @@ function Products() {
 
   return (
     <>
-      <div className="hidden lg:block w-full relative mt-32 ">
+      <div className="hidden lg:block px-2 w-full  relative mt-32 ">
         
         {data.map((val, index) => {
           return (

@@ -84,7 +84,7 @@ function Swipe() {
         </div>
         })}
         </div>
-        <div className="flex justify-center mt-4 ">
+        <div className="flex justify-center  ">
           {data.map((_, index) => (
             <span
               key={index}

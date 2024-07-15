@@ -1,11 +1,11 @@
 import React from 'react'
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-function Card({ width, start, para, hover }) {
+function Card({ width, start, para, hover,height }) {
   return (
     <div
       className={`bg-zinc-800 p-5 rounded-xl ${width}
-    min-h-[20rem] flex flex-col justify-between transition-colors duration-200 hover:${hover}`}
+    max-h-[${height}] flex flex-col justify-between transition-colors duration-200 hover:${hover}`}
     >
       <div className="w-full  transition-all duration-200 hover:px-1">
         <div className="w-full flex justify-between items-center">
@@ -29,7 +29,7 @@ function Card({ width, start, para, hover }) {
       <div className="w-full mt-24 ">
         {start && (
           <>
-            <h1 className="text-7xl font-semibold tracking-tight leading-none ">
+            <h1 className="text-[7vw] font-semibold tracking-tight leading-none ">
               Start a Project
             </h1>
             <button 

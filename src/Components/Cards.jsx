@@ -4,7 +4,7 @@ import Card from "./Card";
 function Cards() {
   return (
     <>
-      <div className="hidden md:block w-full ">
+      <div className="hidden md:block w-full px-4 ">
         <div className="max-w-screen-xl mx-auto flex gap-1  py-20">
           <Card width={"basis-1/3"} start={false} para={true} hover={"bg-customColor8"} />
           <Card
@@ -16,11 +16,11 @@ function Cards() {
         </div>
       </div>
 
-      <div className="md:hidden w-full mt-20 ">
+      <div className="md:hidden w-full mt-12">
         <div className="max-w-screen p-4 flex flex-col-reverse gap-1 overflow-hidden  ">
-          <Card  start={false} para={true} hover={"bg-customColor8"}/>
+          <Card height={"10vw"}  start={false} para={true} hover={"bg-customColor8"}/>
           <Card
-            
+            height={"10vw"}
             start={true}
             para={false}
             hover={"bg-purple-500"}
