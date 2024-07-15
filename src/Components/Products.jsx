@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Product from "./Product";
 import { motion } from "framer-motion";
+import ReactPlayer from "react-player";
+
 
 
 function Products() {
@@ -64,7 +66,7 @@ function Products() {
   //     live: true,
   //     case: false,
   //     video:
-  //       "src\\assets\\Arqitel.webm",
+  //       "src\\assets\\arq.png",
   //   },
   //   {
   //     title: "cula",
@@ -72,7 +74,7 @@ function Products() {
   //       "We immersed ourselves in a 3D world we created to explain how Cula's platform collects data from carbon removal processes and converts them into carbon credit certificates.",
   //     live: true,
   //     case: false,
-  //     video: "src\\assets\\Cula.mp4",
+  //     video: "src\\assets\\cula.png",
   //   },
   //   {
   //     title: "Jungle",
@@ -80,7 +82,7 @@ function Products() {
   //       "We crafted a timeless visual system for Jungle Ventures, covering all aspects of web design, and empowered their marketing team to scale organically using Webflow.",
   //     live: true,
   //     case: false,
-  //     video: "src\\assets\\Jungle.webm",
+  //     video: "src\\assets\\Jungle.png",
   //   },
   //   {
   //     title: "TTR",
@@ -89,7 +91,7 @@ function Products() {
   //     live: true,
   //     case: false,
   //     video:
-  //       "src\\assets\\TTR.webm",
+  //       "src\\assets\\TTR.png",
   //   },
   //   {
   //     title: "Maniv",
@@ -97,7 +99,7 @@ function Products() {
   //       "A global early-stage venture fund partnering with founders to advance cleaner, safer, and more sustainable movement of people and goods.",
   //     live: true,
   //     case: false,
-  //     video: "src\\assets\\Maniv.mp4",
+  //     video: "src\\assets\\Maniv.png",
   //   },
   //   {
   //     title: "singularity",
@@ -105,7 +107,7 @@ function Products() {
   //       "A new site for Singularity that supports their growth and showcases their true identity as industry innovators.",
   //     live: true,
   //     case: false,
-  //     video: "src\\assets\\Singularity.webm",
+  //     video: "src\\assets\\Singularity.png",
   //   },
   //   {
   //     title: "weglot",
@@ -113,7 +115,7 @@ function Products() {
   //       "We made a fun and engaging showcase website for our friends from Weglot to promote their no-code translation solution in Germany.",
   //     live: true,
   //     case: false,
-  //     video: "src\\assets\\Weglot.webm",
+  //     video: "src\\assets\\Weglot.png",
   //   },
   // ];
   
@@ -147,12 +149,11 @@ function Products() {
                 transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.5 }}
                 className="w-full h-full flex flex-col justify-center  "
               >
-                <video
-                autoPlay
-                loop 
+                <video 
+                loading="lazy"
               className=" rounded-3xl object-cover overflow-hidden"
               src={val.video}
-              alt=""></video>
+            ></video>
               </motion.div>
             )
               
