@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <div className='w-full text-white min-h-screen  bg-[#000000] font-["satoshi_variable"] overflow-hidden'>
+      <div className='w-full text-white min-h-screen  bg-[#000000] font-["satoshi_variable"] overflow-x-hidden'>
         <RemoveScrollBar /> 
         <Navbar />
          <Work /> 
